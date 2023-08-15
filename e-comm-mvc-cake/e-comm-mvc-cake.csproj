@@ -1,8 +1,50 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>e_comm_mvc_cake</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Bakery app images\Doughnuts\**" />
+    <Compile Remove="Bakery app images\Photo Cakes\**" />
+    <Content Remove="Bakery app images\Doughnuts\**" />
+    <Content Remove="Bakery app images\Photo Cakes\**" />
+    <EmbeddedResource Remove="Bakery app images\Doughnuts\**" />
+    <EmbeddedResource Remove="Bakery app images\Photo Cakes\**" />
+    <None Remove="Bakery app images\Doughnuts\**" />
+    <None Remove="Bakery app images\Photo Cakes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\CakeWebAppMainImage.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Bakery app images\Cakes\CakesMainPIcture.png" />
+    <Content Include="Bakery app images\Cakes\ChocolateCake.jpg" />
+    <Content Include="Bakery app images\Pastries\Black Current Pastries.jpg" />
+    <Content Include="Bakery app images\Pastries\Pastries Main Picture.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\ButterScotchCake.png" />
+    <None Include="wwwroot\CakeWebAppMainImage.jpg" />
+    <None Include="wwwroot\MainPageImage.jpg" />
+    <None Include="wwwroot\VanillaCake.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>

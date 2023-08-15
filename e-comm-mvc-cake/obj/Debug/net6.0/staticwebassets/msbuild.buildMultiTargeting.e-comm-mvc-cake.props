@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\e-comm-mvc-cake.props" />
+</Project>

@@ -1,0 +1,29 @@
+﻿@model List<Cookie>
+
+@{
+	ViewData["Title"] = "List Of Cookies";
+}
+
+<table class="table">
+	<H1>LIST OF COOKIES</H1>
+	<thead>
+		<tr>
+			<td style="font-weight:bold;font-size:40px">Id</td>
+			<td style="font-weight:bold;font-size:40px">Cookie Image</td>
+			<td style="font-weight:bold;font-size:40px">Cookie Name</td>
+			<td style="font-weight:bold;font-size:40px">Cookie Flavour</td>
+		</tr>
+	</thead>
+	<tbody>	
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td style="font-weight:bold;font-size:30px">@item.Id</td>;
+					<td><img src="~/@item.CookieImage" style="max-width:100px;" class="rounded-circle"/></td>;
+					<td style="font-style:italic;font-size:30px">@item.CookieName</td>;
+					<td style="font-style:italic;font-size:30px">@item.CookieFlavour</td>;
+				</tr>				
+			}		
+	</tbody>
+</table>
+

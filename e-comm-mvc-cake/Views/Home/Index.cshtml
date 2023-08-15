@@ -3,6 +3,23 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">BAKERY PALACE</h1>
+    <p>Discover our delicious Bakery Items</a>.</p>
 </div>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h1>Welcome to our Bakery Shop!</h1>
+        <h2 class="display-2">CAKES</h2>
+        <a href="@Url.Action("Index","Cakes")" class="btn btn-outline-primary">
+            <img src="~/CakesMainImage.jpeg" alt="Bakery Items" />
+        </a>
+    </div>
+    <div class="col-md-8 offset-md-2">
+        <h2 class="display-2">COOKIES</h2>
+        <a href="@Url.Action("Index","Cookies")" class="btn btn-outline-primary">
+            <img src="~/CookiesMainImage.jpeg" alt="Bakery Items" />
+        </a>
+    </div>
+</div>
+
+

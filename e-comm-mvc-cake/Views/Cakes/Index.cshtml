@@ -1,0 +1,37 @@
+﻿@model List<Cake>
+
+@{
+	ViewData["Title"] = "List Of Cakes";
+}
+<table class="table">
+	<h1>LIST OF CAKES</h1>
+	<thead>
+		<tr>
+			<td style="font-weight:bold;font-size:40px">Id</td>
+			<th style="font-weight:bold;font-size:40px">Cake Image</th>
+			<th style="font-weight:bold;font-size:40px">Cake Name</th>
+			<th style="font-weight:bold;font-size:40px">Cake Flavour</th>
+		</tr>
+	</thead>
+	<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td style="font-weight:bold;font-size:30px">@item.Id</td>;
+					<td><img src="~/@item.CakeImage" alt="CakeName" class="rounded-circle"style="max-width:100px" /></td>;
+					<td style="font-style:italic;font-size:30px">@item.CakeName</td>;
+					<td style="font-style:italic;font-size:30px">@item.CakeFlavour</td>;
+					<td class="align-middle">
+						<a class="btn btn-outline-primary"asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i>Edit</a>
+						<a class="btn btn-outline-info"asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-eye"></i>Details</a>
+						<a class="btn btn-danger"asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i>Delete</a>
+					</td>
+				</tr>				
+			}		
+	</tbody>
+</table>
+
+<div class="text-white">
+	<a asp-controller="Cakes" asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i>Add New</a>
+</div>
+

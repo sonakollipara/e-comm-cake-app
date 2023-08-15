@@ -1,0 +1,49 @@
+﻿@model Cake
+
+@{
+    ViewData["Title"] = "Details of the Cake";
+}
+
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>Details for @Model.CakeName</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                    <div class="form-group text-center">
+                        <img class="border-info rounded-circle" style="max-width: 150px" id="CakeImagePreview" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CakeImage" class="control-label"></label>
+                        <input asp-for="CakeImage" class="form-control" readonly />
+                        <span asp-validation-for="CakeImage" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CakeName" class="control-label"></label>
+                        <input asp-for="CakeName" class="form-control" readonly />
+                        <span asp-validation-for="CakeName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CakeFlavour" class="control-label"></label>
+                        <input asp-for="CakeFlavour" class="form-control" readonly />
+                        <span asp-validation-for="CakeFlavour" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                            <a class="btn btn-outline-success float-right" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+                            <a class="btn btn-outline-secondary" asp-action="Index">Back To List</a>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('CakeImagePreview');
+            output.src = $("#CakeImage").val();
+        })
+    </script>
+}
