@@ -1,0 +1,61 @@
+﻿@model CupCake
+@{
+    ViewData["Title"] = "Update A CupCake Product";
+}
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>Update A CupCake Product</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group text-center">
+                        <img id="CupCakeImagePreview" class="border-info rounded-circle" style="max-width: 150px" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CupCakeImage" class="control-label"></label>
+                        <input asp-for="CupCakeImage" class="form-control" />
+                        <span asp-validation-for="CupCakeImage" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CupCakeName" class="control-label"></label>
+                        <input asp-for="CupCakeName" class="form-control" />
+                        <span asp-validation-for="CupCakeName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CupCakeFlavour" class="control-label"></label>
+                        <select asp-for="CupCakeFlavour" class="form-control">
+                            <option value="">Select Flavour</option>
+                            @foreach (var flavour in Enum.GetValues(typeof(e_comm_mvc_cake.Data.Flavour)))
+                            {
+                                <option value="@flavour">@flavour</option>
+                            }
+                        </select>
+                        <span asp-validation-for="CupCakeFlavour" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Update" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Back To List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('CupCakeImagePreview');
+            output.src = $('#CupCakeImage').val();
+        })
+        $("#CupCakeImage").on("change", function () {
+            var output = document.getElementById('CupCakeImagePreview');
+            output.src = $(this).val();
+        })
+    </script>
+}

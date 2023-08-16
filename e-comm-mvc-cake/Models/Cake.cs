@@ -1,11 +1,16 @@
 ﻿using e_comm_mvc_cake.Data;
+using e_comm_mvc_cake.Data.Base;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
 namespace e_comm_mvc_cake.Models
 {
-	public class Cake
+	public class Cake :IEntityBase
 	{
+        //WE CAN KEEP THIS ID PROPERTY OR EVEN DELETE IT FROM HERE
+        //BECAUSE WE HAVE INHERITED THE INTERFACE
+        //THIS INTERFACE WILL OVERRIDE THIS ID PROPERTY WITH THE
+        //PROPERTY IN INTERFACE
         [Key]
         public int Id { get; set; }
 

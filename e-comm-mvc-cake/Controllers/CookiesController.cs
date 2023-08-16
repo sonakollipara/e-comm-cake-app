@@ -2,6 +2,7 @@
 using e_comm_mvc_cake.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -9,23 +10,35 @@ namespace e_comm_mvc_cake.Controllers
 {
     public class CookiesController : Controller
     {
-        private List<Cookie> _cookie = new List<Cookie>()
+        //private List<Cookie> _cookie = new List<Cookie>()
+        //{
+        //    new Cookie {Id=1, CookieImage="ButterCookie.jpg",CookieName="Butter",CookieFlavour=Flavour.Butter},
+        //    new Cookie {Id=2, CookieImage="FruitCookie.jpg",CookieName="Fruit",CookieFlavour=Flavour.Fruit},
+        //    new Cookie {Id=3, CookieImage="CashewCookie.jpg",CookieName="Cashew",CookieFlavour=Flavour.Cashew},
+        //    new Cookie {Id=4, CookieImage="ChocoChipCookie.jpg",CookieName="ChocoChip",CookieFlavour=Flavour.ChocoChip}
+        //};
+
+        private readonly AppDbContext _dbContext;
+        public CookiesController(AppDbContext dbContext)
         {
-            new Cookie {Id=1, CookieImage="ButterCookie.jpg",CookieName="Butter",CookieFlavour=Flavour.Butter},
-            new Cookie {Id=2, CookieImage="FruitCookie.jpg",CookieName="Fruit",CookieFlavour=Flavour.Fruit},
-            new Cookie {Id=3, CookieImage="CashewCookie.jpg",CookieName="Cashew",CookieFlavour=Flavour.Cashew},
-            new Cookie {Id=4, CookieImage="ChocoChipCookie.jpg",CookieName="ChocoChip",CookieFlavour=Flavour.ChocoChip}
-        };
+            _dbContext = dbContext;
+        }
         // GET: CookiesController
         public async Task<ActionResult> Index()
         {
-            return View(_cookie);
+            var allCookies = await _dbContext.Cookies.ToListAsync();
+            return View(allCookies);
         }
 
         // GET: CookiesController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            return View();
+			var cookieResult = await _dbContext.Cookies.FindAsync(id);
+			if (cookieResult == null)
+			{
+				return View("NotFound");
+			}
+			return View(cookieResult);
         }
 
         // GET: CookiesController/Create
@@ -37,58 +50,66 @@ namespace e_comm_mvc_cake.Controllers
         // POST: CookiesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create([Bind("CookieImage,CookieName,CookieFlavour")]Cookie cookie)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+			if (!ModelState.IsValid)
+			{
+				return View(cookie);
+			}
+			await _dbContext.Cookies.AddAsync(cookie);
+			await _dbContext.SaveChangesAsync();
+			return RedirectToAction(nameof(Index));
+		}
 
         // GET: CookiesController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var cookieResult =await _dbContext.Cookies.FindAsync(id);
+            if(cookieResult == null)
+            {
+                return View("NotFound");
+            }
+            return View(cookieResult);
         }
 
         // POST: CookiesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, Cookie cookie)
         {
-            try
+            if(!ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                return View(cookie);
             }
-            catch
-            {
-                return View();
-            }
+            _dbContext.Update(cookie);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: CookiesController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+			var cookieResult = await _dbContext.Cookies.FindAsync(id);
+			if (cookieResult == null)
+			{
+				return View("NotFound");
+			}
+			return View(cookieResult);
         }
 
         // POST: CookiesController/Delete/5
-        [HttpPost]
+        [HttpPost,ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+			var cookieResult = await _dbContext.Cookies.FindAsync(id);
+			if (cookieResult == null)
+			{
+				return View("NotFound");
+			}
+            _dbContext.Cookies.Remove(cookieResult);
+            await _dbContext.SaveChangesAsync();
+			return RedirectToAction(nameof(Index));
         }
     }
 }

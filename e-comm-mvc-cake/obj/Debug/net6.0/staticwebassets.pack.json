@@ -21,12 +21,20 @@
       "PackagePath": "staticwebassets\\CookiesMainImage.jpeg"
     },
     {
+      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\CupCakesMainImage.jpeg",
+      "PackagePath": "staticwebassets\\CupCakesMainImage.jpeg"
+    },
+    {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\FruitCookie.jpg",
       "PackagePath": "staticwebassets\\FruitCookie.jpg"
     },
     {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\MainPageImage.jpg",
       "PackagePath": "staticwebassets\\MainPageImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\PastriesMainImage.jpg",
+      "PackagePath": "staticwebassets\\PastriesMainImage.jpg"
     },
     {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\css\\site.css",

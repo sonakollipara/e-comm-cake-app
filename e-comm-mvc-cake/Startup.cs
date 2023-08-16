@@ -1,4 +1,5 @@
 using e_comm_mvc_cake.Data;
+using e_comm_mvc_cake.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,10 @@ namespace e_comm_mvc_cake
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
+			services.AddScoped<ICakeService, CakeService>();
+            services.AddScoped<ICookieService, CookieService>();
+            services.AddScoped<ICupCakeService, CupCakeService>();
+			services.AddScoped<IPastryService, PastryService>();
 			services.AddDbContext<AppDbContext>(options => options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=E-Bakery-Db;"));
 		}
 

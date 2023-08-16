@@ -36,8 +36,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Cookies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Cookies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Cookies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Cookies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Cookies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/CupCakes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VwQ2FrZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/CupCakes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VwQ2FrZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/CupCakes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VwQ2FrZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/CupCakes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VwQ2FrZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/CupCakes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VwQ2FrZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Home/Index.cshtml]
@@ -46,6 +82,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Pastries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzdHJpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Pastries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzdHJpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Pastries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzdHJpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Pastries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzdHJpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Pastries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzdHJpZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ksona/OneDrive/Desktop/e-commerce-cake/e-comm-mvc-cake/Views/Shared/Error.cshtml]

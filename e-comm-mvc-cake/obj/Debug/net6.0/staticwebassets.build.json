@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W9tsuyF5iW+qQL3ESjGaUUm6zc42WRLUVbk++1HV5Lg=",
+  "Hash": "8qBG7vo3WnTw94kHDLognvzxoCUURx2fGaGodKMM5Go=",
   "Source": "e-comm-mvc-cake",
   "BasePath": "_content/e-comm-mvc-cake",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\CupCakesMainImage.jpeg",
+      "SourceId": "e-comm-mvc-cake",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\",
+      "BasePath": "_content/e-comm-mvc-cake",
+      "RelativePath": "CupCakesMainImage.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CupCakesMainImage.jpeg"
     },
     {
       "Identity": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\enterMainImage.jpeg",
@@ -763,6 +780,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\MainPageImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\PastriesMainImage.jpg",
+      "SourceId": "e-comm-mvc-cake",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\",
+      "BasePath": "_content/e-comm-mvc-cake",
+      "RelativePath": "PastriesMainImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PastriesMainImage.jpg"
     }
   ]
 }

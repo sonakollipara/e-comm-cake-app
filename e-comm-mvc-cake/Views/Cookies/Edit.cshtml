@@ -1,0 +1,61 @@
+﻿@model Cookie
+@{
+    ViewData["Title"] = "Update A Cookie Product";
+}
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>Update A Cookie Product</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group text-center">
+                        <img id="CookieImagePreview" class="border-info rounded-circle" style="max-width: 150px" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CookieImage" class="control-label"></label>
+                        <input asp-for="CookieImage" class="form-control" />
+                        <span asp-validation-for="CookieImage" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CookieName" class="control-label"></label>
+                        <input asp-for="CookieName" class="form-control" />
+                        <span asp-validation-for="CookieName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CookieFlavour" class="control-label"></label>
+                        <select asp-for="CookieFlavour" class="form-control">
+                            <option value="">Select Flavour</option>
+                            @foreach (var flavour in Enum.GetValues(typeof(e_comm_mvc_cake.Data.Flavour)))
+                            {
+                                <option value="@flavour">@flavour</option>
+                            }
+                        </select>
+                        <span asp-validation-for="CookieFlavour" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Update" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Back To List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('CookieImagePreview');
+            output.src = $('#CookieImage').val();
+        })
+        $("#CookieImage").on("change", function () {
+            var output = document.getElementById('CookieImagePreview');
+            output.src = $(this).val();
+        })
+    </script>
+}

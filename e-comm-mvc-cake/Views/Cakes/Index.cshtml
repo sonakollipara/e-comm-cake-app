@@ -3,8 +3,8 @@
 @{
 	ViewData["Title"] = "List Of Cakes";
 }
+<h1>LIST OF CAKES</h1>
 <table class="table">
-	<h1>LIST OF CAKES</h1>
 	<thead>
 		<tr>
 			<td style="font-weight:bold;font-size:40px">Id</td>
@@ -18,7 +18,7 @@
 			{
 				<tr>
 					<td style="font-weight:bold;font-size:30px">@item.Id</td>;
-					<td><img src="~/@item.CakeImage" alt="CakeName" class="rounded-circle"style="max-width:100px" /></td>;
+					<td><img src="@item.CakeImage" alt="CakeName" class="rounded-circle"style="max-width:100px" /></td>;
 					<td style="font-style:italic;font-size:30px">@item.CakeName</td>;
 					<td style="font-style:italic;font-size:30px">@item.CakeFlavour</td>;
 					<td class="align-middle">

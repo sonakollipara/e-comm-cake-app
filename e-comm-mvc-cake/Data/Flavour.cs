@@ -10,6 +10,8 @@
 		Butter,
 		Fruit,
 		Cashew,
-		ChocoChip
+		ChocoChip,
+		ClassicVanilla,
+		CookiesAndCream
 	}
 }
