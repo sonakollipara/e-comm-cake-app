@@ -1,32 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\ButterCookie.jpg",
-      "PackagePath": "staticwebassets\\ButterCookie.jpg"
-    },
-    {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\CakesMainImage.jpeg",
       "PackagePath": "staticwebassets\\CakesMainImage.jpeg"
     },
     {
-      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\CashewCookie.jpg",
-      "PackagePath": "staticwebassets\\CashewCookie.jpg"
-    },
-    {
-      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\ChocoChipCookie.jpg",
-      "PackagePath": "staticwebassets\\ChocoChipCookie.jpg"
-    },
-    {
-      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\CookiesMainImage.jpeg",
-      "PackagePath": "staticwebassets\\CookiesMainImage.jpeg"
-    },
-    {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\CupCakesMainImage.jpeg",
       "PackagePath": "staticwebassets\\CupCakesMainImage.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\FruitCookie.jpg",
-      "PackagePath": "staticwebassets\\FruitCookie.jpg"
     },
     {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\MainPageImage.jpg",
@@ -35,6 +15,14 @@
     {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\PastriesMainImage.jpg",
       "PackagePath": "staticwebassets\\PastriesMainImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\PastryMainImage.jpeg",
+      "PackagePath": "staticwebassets\\PastryMainImage.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\YellowBackground.jpeg",
+      "PackagePath": "staticwebassets\\YellowBackground.jpeg"
     },
     {
       "Id": "C:\\Users\\ksona\\OneDrive\\Desktop\\e-commerce-cake\\e-comm-mvc-cake\\wwwroot\\css\\site.css",
