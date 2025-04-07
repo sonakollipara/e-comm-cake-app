@@ -22,7 +22,7 @@ namespace e_comm_mvc_cake.Models
         [Required(ErrorMessage ="Name Is Required")]
         public string CakeName { get; set; }
 
-        [Display(Name ="CakeFlavour")]
+        [Display(Name ="Cakewithflavourname")]
         [Required(ErrorMessage ="Flavour Is Required")]
         public Flavour CakeFlavour { get; set; }
     }
