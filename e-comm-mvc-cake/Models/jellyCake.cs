@@ -26,8 +26,6 @@ namespace e_comm_mvc_cake.Models
         [Required(ErrorMessage ="Flavour Is Required")]
         public Flavour JellyCakelavour { get; set; }
 
-        [Display(Name ="JellyCakeIcing")]
-        [Required(ErrorMessage ="Icing Is Required")]
-        public Flavour JellyCakeIcing { get; set; }
+       
     }
 }
